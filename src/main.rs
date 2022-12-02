@@ -7,6 +7,7 @@ use crate::days::day::Input;
 mod days {
     pub mod day;
     pub mod day1;
+    pub mod day2;
 }
 
 fn main() {
@@ -40,6 +41,7 @@ fn run_day(n: &str, ex: bool) {
 fn get_day(n: &str) -> Box<dyn days::day::Day> {
     match n {
         "1" => Box::new(days::day1::Day1 {}),
+        "2" => Box::new(days::day2::Day2 {}),
         _ => panic!("Unknown day: {}", n),
     }
 }
