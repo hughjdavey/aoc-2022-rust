@@ -4,7 +4,13 @@ Attempt at solving some [Advent of Code 2022](https://adventofcode.com/2022) puz
 
 Thanks to [MetroWind/advent2019](https://github.com/MetroWind/advent2019) and [fspoettel/advent-of-code-rust](https://github.com/fspoettel/advent-of-code-rust) for inspiration on how to structure the project.
 
-### Adding a day (todo automate!)
+### Adding a day
+
+##### Auto
+
+Run `cargo start-day n` where `n` is the day number
+
+##### Manual
 
 _Let us say you are adding day 4_
 
