@@ -1,5 +1,6 @@
 use crate::days::day;
 use crate::days::day::Input;
+use crate::util::to_int;
 
 pub struct Day1 {}
 
@@ -24,7 +25,7 @@ fn sorted_calorie_totals(input: &Input) -> Vec<i32> {
             continue;
         }
         let total = totals.pop().unwrap_or(0);
-        totals.push(total + cals.parse::<i32>().unwrap());
+        totals.push(total + to_int(&cals));
     }
     totals.sort_by(|a, b| b.cmp(a));
     return totals;

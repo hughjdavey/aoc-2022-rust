@@ -4,11 +4,14 @@ use std::io::{BufRead, BufReader};
 
 use crate::days::day::Input;
 
+mod util;
+
 mod days {
     pub mod day;
     pub mod day1;
     pub mod day2;
     pub mod day3;
+    pub mod day4;
 }
 
 fn main() {
@@ -44,6 +47,7 @@ fn get_day(n: &str) -> Box<dyn days::day::Day> {
         "1" => Box::new(days::day1::Day1 {}),
         "2" => Box::new(days::day2::Day2 {}),
         "3" => Box::new(days::day3::Day3 {}),
+        "4" => Box::new(days::day4::Day4 {}),
         _ => panic!("Unknown day: {}", n),
     }
 }
